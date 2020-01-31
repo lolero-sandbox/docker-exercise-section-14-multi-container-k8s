@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: client
-          image: lolero/docker-exercise-section-14-multi-container-k8s-server
+          image: lolero/docker-excercise-section-8-fib-calculator-server
           ports:
             - containerPort: 5000
