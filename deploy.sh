@@ -9,7 +9,7 @@ docker push lolero/docker-excercise-section-8-fib-calculator-server:$SHA
 docker push lolero/docker-excercise-section-8-fib-calculator-worker:latest
 docker push lolero/docker-excercise-section-8-fib-calculator-worker:$SHA
 
-kubectl apply k8s
+kubectl apply -f k8s
 
 kubectl set image deployments/client-deployment client=lolero/docker-excercise-section-8-fib-calculator-client:$SHA
 kubectl set image deployments/server-deployment server=lolero/docker-excercise-section-8-fib-calculator-server:$SHA
